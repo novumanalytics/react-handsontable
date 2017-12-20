@@ -13,6 +13,12 @@ module.exports = [
       library: 'HotTable',
       libraryTarget: 'umd',
     },
+    
+    resolve: {
+      alias: {
+        handsontable: path.resolve(__dirname, 'node_modules/handsontable-pro')
+      }
+    },
 
     externals: {
       react: {
